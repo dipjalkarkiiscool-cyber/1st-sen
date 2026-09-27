@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+	int first, second;
+	printf("Enter two numbers: ");
+	if (scanf("%d %d", &first, &second) != 2) {
+		printf("Invalid input.\n");
+		return 1;
+	}
+
+	printf("%d < %d: %d\n", first, second, first < second);
+	printf("%d <= %d: %d\n", first, second, first <= second);
+	printf("%d > %d: %d\n", first, second, first > second);
+	printf("%d >= %d: %d\n", first, second, first >= second);
+	printf("%d == %d: %d\n", first, second, first == second);
+	printf("%d != %d: %d\n", first, second, first != second);
+	return 0;
+}
